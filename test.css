@@ -294,13 +294,14 @@ nav.sticky .nav-links li a:hover {
   bottom: 20px;
   cursor: pointer;
 }
-
+/*slide*/
 .slider {
-  padding-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 h2 {
   text-align: center;
-  padding: 20px;
+  padding: 5px;
 }
 .slick-slide {
   margin: 0 20px;
@@ -341,7 +342,7 @@ h2 {
 .copy {
   padding-top: 250px;
 }
-
+/*end slider*
 /*produits accueil*/
 .blog__item {
   background-color: #fff;
@@ -381,6 +382,7 @@ h2 {
   color: #0e2431;
 }
 
+/*here*/
 /* Add this to your existing CSS or create a new CSS file */
 .logo-link {
   display: inline-block;
@@ -429,11 +431,22 @@ h2 {
   color: #333;
 }
 
+.customer-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .customer-logos img {
   height: 80px; /* Set the desired height for your images */
   width: auto; /* Auto-adjust the width to maintain aspect ratio */
 }
-
+/*
+.customer-logos .slide {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+*/
 /* Add this CSS to your existing stylesheet or create a new one */
 .gray-background {
   background-color: #f4f4f4;
