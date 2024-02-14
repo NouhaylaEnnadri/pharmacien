@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
@@ -21,6 +24,10 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="here.css" type="text/css">
+    <script src="https://kit.fontawesome.com/234e03b889.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -29,45 +36,29 @@
         <div class="loader"></div>
     </div>
 
-   
 
-    <!-- Header Section Begin -->
-    <header class="header">
-      
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/Logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <nav class="header__menu">
-                        <ul>
-                            <li class="active"><a href="./index.html">Accueil</a></li>
-                            <li><a href="./shop-grid.html">Certifications</a></li>
-                            <li><a href="#">Catégories</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details.html">Equipements</a></li>
-                                    <li><a href="./shoping-cart.html">Produits Anapath</a></li>
-                                    <li><a href="./checkout.html">Microscopes</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-3">
-                    <div class="header__cart">
-                        
-                        <div class="header__cart__price"><button>Login</button></div>
-                    </div>
-                </div>
-            </div>
-            <div class="humberger__open">
-                <i class="fa fa-bars"></i>
-            </div>
+
+    <!--header-->
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+            <a href="./index.html"><img src="img/Logo.png" alt="" width="200" height="50"></a>
         </div>
+        <a href="#menu" class="menu-link"><i class="fa-solid fa-bars"></i></a>
+        <nav id="menu" class="main-nav" role="navigation">
+            <ul class="main-menu">
+                <li><a href="./index.html">Accueil</a></li>
+
+                <li class="has-submenu"><a href="#section2">Catégories</a>
+                    <ul class="sub-menu">
+                        <li><a href="#about">Equipements</a></li>
+                        <li><a href="#section3">Produits Anapath</a></li>
+                        <li><a href="#section3">Microscopes</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
     </header>
     <!-- Header Section End -->
 
@@ -77,20 +68,28 @@
 
 
 <!-- Featured Section Begin -->
-<section class="featured spad">
-    <div class="container">
-        <div class="row">
+<section class="featured1 spad">
+    <div class="container1">
+        <div class="row1">
             <div class="col-lg-12">
-                <div class="section-title">
+                <div class="section-title1">
                     <h2>Certifications</h2>
-                    <br>
-                    <p>SERVICE BIOLOGIQUE SARL a obtenu la certification ISO 13485 v-2016 pour ses activités liées à l’importation, l’exportation, le stockage et la distribution des dispositifs médicaux et réactifs de diagnostic IN-VITRO.
+                    <div class="divider1"></div>
+                    <br><br>
+                    <p>SERVICE BIOLOGIQUE SARL has obtained ISO 13485:2016 certification for its activities related to
+                        the import, export, storage, and distribution of medical devices and in-vitro diagnostic
+                        reagents.
 
-                        ISO est la norme internationale la plus rigoureuse dans le monde, SERVICE BIOLOGIQUE a été auditée par l’organisme européen CERTI-TRUST.
-                        
-                        Cette certification vient récompenser et consolider la démarche de qualité que la société SERVICE BIOLOGIQUE a choisie pour accompagner sa croissance et garantir la qualité et la sécurité des produits en démontrant l’exigence de procédures qualité pour fournir des dispositifs médicaux surs et efficaces.
-                        
-                        L’obtention de la reconnaissance ISO n’est toutefois pas une finalité, nous cherchons continuellement à améliorer nos processus Système de Management de la Qualité, afin de satisfaire les attentes et les exigences de nos clients.</p>
+                        ISO 13485 is the most rigorous international standard in the world, and SERVICE BIOLOGIQUE was
+                        audited by the European body CERTI-TRUST.
+
+                        This certification rewards and strengthens the quality approach that SERVICE BIOLOGIQUE has
+                        chosen to support its growth, ensuring the quality and safety of products by demonstrating the
+                        rigorous quality procedures required to provide safe and effective medical devices.
+
+                        However, obtaining ISO recognition is not an endpoint; we are constantly seeking to improve our
+                        Quality Management System processes to meet the expectations and requirements of our clients.
+                    </p>
                 </div>
             </div>
         </div>
@@ -102,66 +101,27 @@
     <footer class="footer spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            <a href="./index.html" class="logo-link"><img src="img/logo.png" alt="Logo" class="logo" width="250" height="80"></a>
                         </div>
+                        <br>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
-                            <li>Email: hello@colorlib.com</li>
+                            <li>Addresse: 60-49 Road 11378 New York</li>
+                            <li>Tel: +212 5 35 60 03 34 / +212 5 35 96 24 57</li>
+                            <li>Email: info@servicebiologique.com / telmani@servicebiologique.com</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
-                    <div class="footer__widget">
-                        <h6>Useful Links</h6>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">About Our Shop</a></li>
-                            <li><a href="#">Secure Shopping</a></li>
-                            <li><a href="#">Delivery infomation</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Our Sitemap</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Who We Are</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Innovation</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="footer__widget">
-                        <h6>Join Our Newsletter Now</h6>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
-                        <form action="#">
-                            <input type="text" placeholder="Enter your mail">
-                            <button type="submit" class="site-btn">Subscribe</button>
-                        </form>
-                        <div class="footer__widget__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                    </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <!-- Embedded Google Map -->
+                    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13227.181342026174!2d-4.993125149999999!3d34.019098299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaaf5a3c958f5a9%3A0xe924307b3e1ff9aa!2sZone%20Industrielle%20Ain%20Chkef%2C%20Fes%2C%20Morocco!5e0!3m2!1sen!2sus!4v1645000000000!5m2!1sen!2sus"
+                        allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer__copyright">
-                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
-                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
+            <div><br><br></div>
         </div>
     </footer>
     <!-- Footer Section End -->
